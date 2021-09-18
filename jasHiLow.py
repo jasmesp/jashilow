@@ -1,6 +1,4 @@
 from random import randint
-
-
 def random_int(difficulty):
     if difficulty == 1:
         return randint(1, 10)
@@ -8,8 +6,6 @@ def random_int(difficulty):
         return randint(1, 100)
     if difficulty == 3:
         return randint(1, 1000)
-
-
 def start_screen():
     print("Welcome to jasHi-Low!\n")
     print("Please choose a difficulty:\n")
@@ -22,11 +18,7 @@ def start_screen():
         print("Please choose a valid difficulty.")
         start_screen()
     return diff
-
-
 difficulty = start_screen()
-
-
 def game(seed, chances):
     while chances > 0:
         guess = int(input("Guess a number from fix this later\n"))
@@ -46,8 +38,6 @@ def game(seed, chances):
         elif guess == secretnum:
             print("Correct, the number was" + str(random_int(difficulty)))
             start_screen()
-
-
 if difficulty == 1:
     game(1, 5)
 elif difficulty == 2:
