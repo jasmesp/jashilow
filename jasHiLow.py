@@ -30,9 +30,9 @@ difficulty = start_screen()
 def game(seed, chances):
     while chances > 0:
         guess = int(input("Guess a number from fix this later\n"))
-        print(seed)
+#        print(seed)
         secretnum = random_int(seed)
-        print(secretnum)
+ #       print(secretnum)
         if guess > secretnum:
             print("Too high")
             chances -= 1
